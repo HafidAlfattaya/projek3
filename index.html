@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Selamat Datang di Web ku</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+        header {
+            background-color: rgb(28, 58, 86);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            margin-top: 0;
+        }
+        nav table {
+            width: 100%;
+            background-color: rgb(0, 51, 102);
+            border-collapse: collapse;
+        }
+        nav td {
+            text-align: center;
+            font-weight: bold;
+        }
+        nav a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        footer {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Bagian Atas -->
+    <header>
+        <h1>Universitas Gadjah Mada (UGM)</h1>
+        <p>Kampus Biru – Daerah Istimewa Yogyakarta, Indonesia</p>
+    </header>
+
+    <!-- Menu Navigasi -->
+    <nav>
+        <table border="1" cellspacing="0" cellpadding="8">
+        <tr>
+            <td><a href="#profil">Profil</a></td>
+            <td><a href="#fakultasprodi">Fakultas & Prodi</a></td>
+            <td><a href="#pendaftaran">Pendaftaran</a></td>
+            <td><a href="konsultasi.html">Konsultasi</a></td>
+            <td><a href="berita.html">Berita</a></td>
+        </tr>      
+        </table>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main>
+        <!-- Bagian Profil -->
+        <section id="profil">
+            <h2>Profil Universitas Gadjah Mada</h2>
+            <p align="justify">
+                Universitas Gadjah Mada (UGM) adalah salah satu perguruan tinggi negeri terbaik dan tertua di Indonesia.<br>
+                Didirikan pada 19 Desember 1949 di Yogyakarta, UGM berperan penting dalam sejarah pendidikan bangsa.<br> 
+                Nama universitas ini diambil dari patih Kerajaan Majapahit, Gadjah Mada, yang terkenal dengan Sumpah Palapa-nya, melambangkan semangat persatuan dan integritas bangsa. 
+                <br><br>
+                ITB memiliki visi menjadi perguruan tinggi bertaraf internasional yang unggul, 
+                inovatif, serta mampu memberikan kontribusi nyata bagi bangsa dan dunia. 
+                <br><a href="#top">Kembali ke Atas</a>
+            </p>
+        </section>
+
+        <!-- Bagian Fakultas & Prodi -->
+        <section id="fakultasprodi">
+            <h2>Fakultas & Program Studi</h2>
+            <p align="justify">
+                ITB memiliki berbagai fakultas dan program studi yang mendukung pengembangan ilmu pengetahuan, 
+                teknologi, seni, dan manajemen. Beberapa fakultas unggulan di ITB antara lain:
+            </p>
+
+            <table border="1" cellpadding="8" cellspacing="0">
+                <tr><th>No</th><th>Fakultas</th><th>Program Studi Contoh</th></tr>
+                <tr><td>1</td><td>Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA)</td><td>Matematika, Fisika, Kimia</td></tr>
+                <tr><td>2</td><td>Fakultas Teknik Mesin dan Dirgantara (FTMD)</td><td>Teknik Mesin, Teknik Dirgantara</td></tr>
+                <tr><td>3</td><td>Fakultas Teknologi Industri (FTI)</td><td>Teknik Industri, Teknik Kimia</td></tr>
+                <tr><td>4</td><td>Sekolah Teknik Elektro dan Informatika (STEI)</td><td>Informatika, Sistem Informasi, Teknik Elektro</td></tr>
+                <tr><td>5</td><td>Fakultas Seni Rupa dan Desain (FSRD)</td><td>Desain Komunikasi Visual, Seni Rupa</td></tr>
+            </table>
+            <br><a href="#top">Kembali ke Atas</a>
+        </section>
+
+        <!-- Bagian Pendaftaran -->
+        <section id="pendaftaran">
+            <h2>Pendaftaran Mahasiswa Baru</h2>
+            <form>
+               <h3>Isilah Formulir dibawah ini dengan benar</h3>
+                1. Nama &ensp;: &ensp;<input type="text" name="tnama"><br><br>
+                2. Tempat Lahir &ensp;: &ensp;<input type="text" name="ttempatlahir"><br><br>
+                3. Tanggal Lahir &ensp;: &ensp;<input type="date" name="ttgllahir"><br><br>
+                4. Alamat&ensp;: <br>
+                <textarea name="talamat" rows="4" cols="50"></textarea><br><br>
+                5. Email&ensp;:&ensp; <input type="email" name="temail"><br><br>
+                6. Kota/Kabupaten&ensp;:&ensp;
+                <select name='kota_kabupaten'>
+                    <option value='1'>Kota Semarang</option>
+                    <option value='2'>Kabupaten Semarang</option>
+                    <option value='3'>Kabupaten Demak</option>
+                    <option value='4'>Kabupaten Kendal</option>
+                    <option value='5'>Kabupaten Pekalongan</option>
+                </select><br><br>
+                7. Propinsi&ensp;:
+                <select name='propinsi'>
+                    <option value='1'>Jawa Tengah</option>
+                    <option value='2'>Jawa Barat</option>
+                    <option value='3'>Jawa Timur</option>
+                    <option value='4'>Papua</option>
+                </select>
+                <br><br>
+                8. Unggah Halaman depan Ijazah terakhir : <input type="file">
+                <br><br>
+                <h4>Sosialisasi Edisi Penerimaan Mahasiswa Baru</h4> 
+                
+                <!-- Embed YouTube -->
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/live/ubO0AJHmJdo?si=lxU07hhFvauoa-4i" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+
+                <br><br>
+                <input type="submit" value="Kirim">    
+            </form>    
+            <br><a href="#top">Kembali ke Atas</a>
+        </section>    
+
+    </main>
+
+    <!-- Bagian Bawah -->
+    <footer>
+        <hr>
+        <p>© 2025 - Website Informasi UGM</p>
+    </footer>
+
+</body>
+</html>
